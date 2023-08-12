@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3rem;
+  justify-content: space-between;
+  background-color: rgb(0, 67, 125);
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+.banner {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("https://img.freepik.com/free-photo/peak-bamboo-lijiang-rural-mist_1417-410.jpg?w=996&t=st=1691829174~exp=1691829774~hmac=3618b909543b1c168dbd1c913c3bdfc02e6cbd66cdcfb6c86dcdf6587bafad6c");
+  height: 36rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner h1 {
+  font-size: 4rem;
+}
+
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
