@@ -6,46 +6,60 @@
   </head>
   <body>
     <div class="header">
-      <span><h2 style="color: whitesmoke;">TTExpo</h1></span>
+      <span>
+        <h2 style="color: whitesmoke"><a href="main.html">TTExpo</a></h2>
+      </span>
     </div>
     <div class="form-div">
-        <h2>Registration</h2>
-        <form>
-            <!-- - ชื่อบริษัท 
+      <h2>Registration</h2>
+      <form>
+        <!-- - ชื่อบริษัท 
             - ขนาดบูธ เลือกผ่าน drop down list จาก 10x10 ฟุต หรือ 10x15 ฟุต
             - Checkbox สาหรับให้เลือกหากต้องการโต๊ะตั้งในบูธ
             - จานวนเก้าอี้
             - ชื่อผู้ติดต่อ
             - เบอร์ผู้ติดต่อ -->
-            <div class="input-div">
-                <label for="companyName">Company Name</label>
-                <input type="text" name="companyName"id="companyName"/> 
-            </div>
-            <div class="input-div">
-                <label for="boothSize">Booth Size</label>
-                <select name="boothSize" id="boothSize">
-                    <option value="10x10">10x10</option>
-                    <option value="15x15">15x15</option>
-                </select>
-            </div>
-            <div style="margin-bottom: 1rem;">
-                <label for="tableProvided">Table provided</label>
-                <input type="checkbox" name="tableProvided" id="tableProvided">
-            </div>
-            <div class="input-div">
-                <label for="chairNumber">Number of chair</label>
-                <input type="number" name="chairNumber"id="chairNumber" min="0" step="1"/> 
-            </div>
-            <div class="input-div">
-                <label for="contactName">Contact's name</label>
-                <input type="text" name="contactName"id="contactName"/> 
-            </div>
-            <div class="input-div">
-                <label for="contactPhoneNumber">Contact's phone number</label>
-                <input type="text" name="contactPhoneNumber"id="contactPhoneNumber"/> 
-            </div>
-
-        </form>
+        <div class="input-div">
+          <label for="companyName">Company Name</label>
+          <input type="text" name="companyName" id="companyName" />
+        </div>
+        <div class="input-div">
+          <label for="boothSize">Booth Size</label>
+          <select name="boothSize" id="boothSize">
+            <option value="10x10">10x10</option>
+            <option value="15x15">15x15</option>
+          </select>
+        </div>
+        <div style="margin-bottom: 1rem">
+          <label for="tableProvided">Table provided</label>
+          <input type="checkbox" name="tableProvided" id="tableProvided" />
+        </div>
+        <div class="input-div">
+          <label for="chairNumber">Number of chair</label>
+          <input
+            type="number"
+            name="chairNumber"
+            id="chairNumber"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="input-div">
+          <label for="contactName">Contact's name</label>
+          <input type="text" name="contactName" id="contactName" />
+        </div>
+        <div class="input-div">
+          <label for="contactPhoneNumber">Contact's phone number</label>
+          <input
+            type="text"
+            name="contactPhoneNumber"
+            id="contactPhoneNumber"
+          />
+        </div>
+        <div style="text-align: center">
+          <input type="submit" name="submit" id="submit" value="Submit" />
+        </div>
+      </form>
     </div>
   </body>
 </html>
