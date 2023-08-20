@@ -7,3 +7,17 @@
   position: relative;
   box-sizing: border-box;
 }
+
+.banner img {
+  opacity: 70%;
+}
+
+.bannerText {
+  position: relative;
+  padding: 6rem;
+  z-index: 20;
+  text-align: center;
+  color: darkblue;
+  font-weight: bold;
+  font-size: 2rem;
+}

@@ -11,6 +11,10 @@ export default function Banner() {
         objectFit="cover"
         priority
       />
+      <div className={styles.bannerText}>
+        <h1>Vaccination Service</h1>
+        <h2>at Siriraj Hospital</h2>
+      </div>
     </div>
   );
 }
