@@ -1,0 +1,9 @@
+.banner {
+  display: block;
+  padding: 5px;
+  margin: 0;
+  width: 100vw;
+  height: 75vh;
+  position: relative;
+  box-sizing: border-box;
+}
