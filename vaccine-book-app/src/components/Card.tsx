@@ -1,10 +1,18 @@
 import styles from "./card.module.css";
+import Image from "next/image";
 
-export default function Card(props: any) {
+interface Props {
+  name: string;
+  imgSrc: string;
+}
+
+export default function Card(props: Props) {
   return (
     <div className={styles.card}>
-      <h2>{props.title}</h2>
-      <p>{props.children}</p>
+      <div className={styles.cardImg}>
+        <Image src={props.imgSrc} alt={"Image"} fill={true} objectFit="cover" />
+      </div>
+      <h2 className={styles.cardText}>{props.name}</h2>
     </div>
   );
 }
