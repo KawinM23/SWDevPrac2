@@ -18,9 +18,8 @@ export default function Banner() {
         src={imgSrc[index]}
         alt="cover"
         fill={true}
-        objectFit="cover"
         priority
-        className="opacity-60"
+        className="opacity-60 object-cover"
         onClick={() => {
           setIndex((index + 1) % imgSrc.length);
         }}
