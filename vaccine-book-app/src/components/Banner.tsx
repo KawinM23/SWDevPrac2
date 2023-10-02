@@ -1,9 +1,11 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Banner() {
   const [index, setIndex] = useState(0);
+  const router = useRouter();
 
   const imgSrc = [
     "/img/cover1.avif",
@@ -28,6 +30,14 @@ export default function Banner() {
         <h1 className="text-5xl">Vaccination Service</h1>
         <h2>because Health is importent</h2>
       </div>
+      <button
+        className=" font-semibold text-xl p-2 m-2 rounded z-30 absolute bottom-5 right-5 bg-white text-cyan-600 border border-cyan-600 hover:text-white hover:border-white hover:bg-cyan-600"
+        onClick={() => {
+          router.push("/hospital");
+        }}
+      >
+        Hospital
+      </button>
     </div>
   );
 }
