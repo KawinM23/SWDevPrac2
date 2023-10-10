@@ -8,8 +8,7 @@ export default function MenuBar() {
       <Image
         src="/img/vaccine-6592893_1280.png"
         alt={"logo"}
-        objectFit="contain"
-        className="h-[90%] w-auto"
+        className="h-[90%] w-auto object-contain"
         width={0}
         height={0}
         sizes="100vh"
