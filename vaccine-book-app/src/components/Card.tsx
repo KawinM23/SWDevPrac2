@@ -41,7 +41,7 @@ export default function Card(props: Props) {
             e.stopPropagation();
           }}
         >
-          {props.onRatingChanged != null && props.onRemove != null && (
+          {props.onRatingChanged && (
             <Rating
               name="hospital-rating"
               value={props.rating != undefined ? props.rating : null}

@@ -2,20 +2,6 @@ import { getHospital } from "@/libs/getHospital";
 import Image from "next/image";
 
 export default async function Page({ params }: { params: { hid: string } }) {
-  // const mockHospital = new Map();
-  // mockHospital.set("001", {
-  //   name: "Chulalongkorn Hospital",
-  //   imgSrc: "/img/chula.jpg",
-  // });
-  // mockHospital.set("002", {
-  //   name: "Rajavithi Hospital",
-  //   imgSrc: "/img/rajavithi.jpg",
-  // });
-  // mockHospital.set("003", {
-  //   name: "Thammasat University Hospital",
-  //   imgSrc: "/img/thammasat.jpg",
-  // });
-
   const hospitalRes = await getHospital(params.hid);
   const hospital = hospitalRes.data;
 
