@@ -2,10 +2,14 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 
 export default function Banner() {
   const [index, setIndex] = useState(0);
   const router = useRouter();
+
+  const { data: session } = useSession();
+  console.log(session);
 
   const imgSrc = [
     "/img/cover1.avif",
@@ -30,6 +34,11 @@ export default function Banner() {
         <h1 className="text-5xl">Vaccination Service</h1>
         <h2>because Health is importent</h2>
       </div>
+      {session && (
+        <div className="absolute right-0 top-0 p-4 z-30 text-cyan-600 font-semibold text-xl">
+          Welcome, {session.user?.name}!
+        </div>
+      )}
       <button
         className=" font-semibold text-xl p-2 m-2 rounded z-30 absolute bottom-5 right-5 bg-white text-cyan-600 border border-cyan-600 hover:text-white hover:border-white hover:bg-cyan-600"
         onClick={() => {
