@@ -3,6 +3,7 @@ import "../app/global.css";
 import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]/route";
 import NextAuthProvider from "@/provider/NextAuthProvider";
+import ReduxProvider from "@/redux/ReduxProvider";
 
 export const metadata = {
   title: "Vaccination Service",
@@ -19,10 +20,12 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body style={{ margin: 0, padding: 0 }}>
-        <NextAuthProvider session={session}>
-          <MenuBar />
-          <div className="mt-20">{children}</div>
-        </NextAuthProvider>
+        <ReduxProvider>
+          <NextAuthProvider session={session}>
+            <MenuBar />
+            <div className="mt-20">{children}</div>
+          </NextAuthProvider>
+        </ReduxProvider>
       </body>
     </html>
   );

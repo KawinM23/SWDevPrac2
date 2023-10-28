@@ -23,6 +23,7 @@ export default async function MenuBar() {
             </div>
           </Link>
         )}
+        <MenuBarItem title="My Booking" pageRef="/mybooking" />
       </span>
       <span className="h-full flex justify-end items-center">
         <MenuBarItem title="Booking" pageRef="/booking" />
