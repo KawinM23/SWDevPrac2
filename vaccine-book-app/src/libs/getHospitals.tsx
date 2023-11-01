@@ -3,7 +3,9 @@ export async function getHospitals() {
     setTimeout(resolve, 5000);
   });
 
-  const res = await fetch("http://localhost:5000/api/v1/hospitals");
+  const res = await fetch("http://localhost:5000/api/v1/hospitals", {
+    next: { tags: ["hospitals"] },
+  });
   if (!res.ok) {
     throw new Error("Failed to fetch hospitals");
   }

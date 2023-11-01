@@ -27,14 +27,15 @@ export default async function MenuBar() {
       </span>
       <span className="h-full flex justify-end items-center">
         <MenuBarItem title="Booking" pageRef="/booking" />
-        <Image
-          src="/img/vaccine-6592893_1280.png"
-          alt={"logo"}
-          className="h-[90%] w-auto object-contain"
-          width={0}
-          height={0}
-          sizes="100vh"
-        />
+        <Link href={"/"} className="h-[90%] w-auto">
+          <Image
+            src="/img/vaccine-6592893_1280.png"
+            alt={"logo"}
+            className="h-full w-auto object-contain"
+            width={300}
+            height={300}
+          />
+        </Link>
       </span>
     </div>
   );
