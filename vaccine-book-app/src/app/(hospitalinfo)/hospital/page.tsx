@@ -27,7 +27,7 @@ export default async function Home() {
       >
         <HospitalCatalog hospitalJson={hospitals} />
       </Suspense>
-      {userProfile.data.role == "admin" && <AddHospitalForm />}
+      {userProfile?.data.role == "admin" && <AddHospitalForm />}
     </main>
   );
 }
